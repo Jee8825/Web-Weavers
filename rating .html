@@ -28,10 +28,10 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Two columns */
+            grid-template-columns: 1fr;
             gap: 20px;
             padding: 30px;
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -77,6 +77,22 @@
             color: #ffffff;
         }
 
+        .gallery-item button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #20c997;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .gallery-item button:hover {
+            background: #18a57e;
+        }
+
         footer {
             text-align: center;
             padding: 15px;
@@ -102,6 +118,7 @@
                 <h3>Deadpool & Wolverine</h3>
                 <p>IMDb Rating: 7.6/10. Rate this movie out of 10.</p>
                 <input type="number" min="0" max="10" placeholder="Enter your rating">
+                <button onclick="submitRating()">Submit</button>
             </div>
         </div>
         <div class="gallery-item">
@@ -110,6 +127,7 @@
                 <h3>Dune: Part Two</h3>
                 <p>IMDb Rating: 8.5/10. Rate this movie out of 10.</p>
                 <input type="number" min="0" max="10" placeholder="Enter your rating">
+                <button onclick="submitRating()">Submit</button>
             </div>
         </div>
     </section>
@@ -117,5 +135,11 @@
     <footer>
         <p>&copy; 2024 Interactive Blog. All rights reserved.</p>
     </footer>
+
+    <script>
+        function submitRating() {
+            alert("Your rating has been submitted. Thank you!");
+        }
+    </script>
 </body>
 </html>
