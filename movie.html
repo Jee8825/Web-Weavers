@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #1f1f1f;
+            border-bottom: 2px solid #333333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #20c997;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            display: flex;
+            align-items: flex-start;
+            color: #ffffff;
+            background: #1f1f1f;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .gallery-item img {
+            flex: 0 0 50%; /* Image takes half the width */
+            height: auto;
+            max-height: 300px; /* Maintain portrait size */
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .gallery-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .gallery-info h3 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #20c997;
+        }
+
+        .gallery-info p {
+            font-size: 1.2em;
+            color: #8ab4f8;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f1f1f;
+            border-top: 2px solid #333333;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8ab4f8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movies</h1>
+    </header>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="Wolverine .jpeg" alt="Movie 1">
+            <div class="gallery-info">
+                <h3>Deadpool & Wolverine</h3>
+                <p>
+                    "Deadpool & Wolverine" is a 2024 American superhero film. 
+                    It features Deadpool teaming up with Wolverine on an epic journey.
+                    This movie blends comedy, action, and heartfelt moments that will captivate audiences worldwide.
+                </p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Dune11.jpeg" alt="Movie 2">
+            <div class="gallery-info">
+                <h3>Dune: Part Two</h3>
+                <p>
+                    "Dune: Part Two" is the epic conclusion to the two-part adaptation of Frank Herbert's novel. 
+                    It continues Paul Atreides' journey as he joins forces with the Fremen. 
+                    This film showcases breathtaking visuals and a compelling narrative.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Interactive Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
